@@ -1,0 +1,243 @@
+* {
+  /*BUTTONS------------------------*/
+  --pBColor: rgb(19, 167, 255);
+  --pHColor: rgb(52, 92, 255);
+  --pBGColor: rgb(31, 55, 152);
+  --pAColor: rgb(31, 55, 127);
+  
+  --nBColor: rgb(255, 19, 19);
+  --nHColor: rgb(170, 25, 25);
+  --nBGColor: rgb(125, 25, 25);
+  --nAColor: rgb(100, 25, 25);
+  
+  --btnPadding: 5px;
+  --btnMSize: 25px;
+  --btnSSize: 16px;
+  --btnSPos: 14px;
+  --btnBSize: 40px;
+  
+  /*INPUTS-------------------------*/
+  --inputColor: black;
+  --inputBGColor: white;
+  --inputBColor: black;
+  
+  --inputPadding: 5px;
+  --inputMHeight: 25px;
+  --inputMWidth: 150px;
+  --inputSSize: 16px;
+  --inputSPos: 14px;
+  
+  /*TEXT---------------------------*/
+  --textColor: white;
+  --headFont: 'Libre Franklin', sans-serif;
+  --regFont: 'Montserrat', sans-serif;
+  
+  /*MASCOT-------------------------*/
+  --mascotBGColor: white;
+  --mascotTextColor: black;
+  --mascotFont: 'WorkSans';
+  --mascotBRadius: 15px;
+  --mascotPadding: 10px;
+  
+  /*DIV-STUFF----------------------*/
+  --transpColor: rgba(74, 74, 74, .6);
+  --borderColor: white;
+  
+  --borderStyle: solid;
+  --borderWidth: 3px;
+}
+
+/*NEW FONTS------------------------*/
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url(../media/WorkSans-Regular.ttf);
+}
+
+/*REGULAR CSS----------------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--textColor);
+}
+
+body > nav {
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../media/starcadeBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--headFont);
+}
+
+p, a, input, button, label, section {
+  font-family: var(--regFont);
+}
+
+a {
+  text-decoration: none;
+}
+
+.mascotTalk {
+  font-family: var(--mascotFont);
+  background-color: var(--mascotBGColor);
+  color: var(--mascotTextColor);
+  border-radius: var(--mascotBRadius);
+  padding: var(--mascotPadding);
+}
+
+.flexer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*BUTTONS--------------------------*/
+.transp {
+  padding: 10px;
+  background-color: var(--transpColor);
+  border: var(--borderStyle);
+  border-color: var(--borderColor);
+}
+
+.btnHolder, .inputHolder {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: auto;
+}
+
+.btnHolder > * {
+  transition: background-color .25s;
+}
+
+.btnHolder:hover {
+  cursor: pointer;
+}
+
+.btnHolder > div:first-child, .btnHolder > div:last-child {
+  position: relative;
+  transform: rotate(45deg);
+  transform-origin: center;
+  width: var(--btnSSize);
+  height: var(--btnSSize);
+  z-index: 0;
+}
+
+.btnHolder > *:first-child {
+  border-bottom-style: var(--borderStyle);
+  border-left-style: var(--borderStyle);
+  left: var(--btnSPos);
+}
+
+.btnHolder > *:nth-child(2) {
+  border-top-style: var(--borderStyle);
+  border-bottom-style: var(--borderStyle);
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.btnHolder > *:last-child {
+  border-top-style: var(--borderStyle);
+  border-right-style: var(--borderStyle);
+  right: var(--btnSPos);
+}
+
+.btnHolder > button {
+  height: var(--btnBSize);
+  border-width: var(--borderWidth);
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.btnHolder > button:hover {
+  cursor: pointer;
+}
+
+.btnHolder:hover > .nBtn {
+  background-color: var(--nHColor);
+}
+
+.btnHolder:active > .nBtn {
+  background-color: var(--nAColor);
+}
+
+.btnHolder:hover > .pBtn {
+  background-color: var(--pHColor);
+}
+
+.btnHolder:active > .pBtn {
+  background-color: var(--pAColor);
+}
+
+.pBtn {
+  padding: var(--btnPadding);
+  height: var(--btnMSize);
+  background-color: var(--pBGColor);
+  border-color: var(--pBColor);
+  border-width: var(--borderWidth);
+}
+
+.nBtn {
+  padding: var(--btnPadding);
+  height: var(--btnMSize);
+  background-color: var(--nBGColor);
+  border-color: var(--nBColor);
+  border-width: var(--borderWidth);
+}
+
+/*INPUTS---------------------------*/
+
+.inputEle {
+  padding: var(--inputPadding);
+  height: var(--inputMHeight);
+  width: var(--inputMWidth);
+  background-color: var(--inputBGColor);
+  border-color: var(--inputBColor);
+  color: var(--inputColor);
+  border-width: var(--borderWidth);
+}
+
+.inputHolder > div:first-child, .inputHolder > div:last-child {
+  position: relative;
+  transform: rotate(45deg);
+  transform-origin: center;
+  width: var(--inputSSize);
+  height: var(--inputSSize);
+  z-index: 0;
+}
+
+.inputHolder > *:first-child {
+  border-bottom-style: var(--borderStyle);
+  border-left-style: var(--borderStyle);
+  left: var(--inputSPos);
+}
+
+.inputHolder > *:nth-child(2) {
+  border-top-style: var(--borderStyle);
+  border-bottom-style: var(--borderStyle);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.inputHolder > *:last-child {
+  border-top-style: var(--borderStyle);
+  border-right-style: var(--borderStyle);
+  right: var(--inputSPos);
+}

@@ -1,0 +1,23 @@
+* {
+    --colVLight: lightblue;
+    --colLight: rgb(46,106,255);
+    --colDark: #3200ce;
+    --colVDark: darkblue;
+    --dottedBackground: -moz-repeating-radial-gradient(center center, rgb(255,255,255), rgb(195,195,195) 0px, transparent 1px, transparent 100%);
+    --dottedBackgroundSize: 6px 6px;
+    --fontCarl: 'CarlBarksfont';
+    --fontStix: 'STIXReg';
+    --fontStixBold: 'STIXBold';
+    --colLightYell: #ffc600;
+    --colDarkYell: #B97D00;
+    --boxShadow: 0 4px 8px 2px rgba(0, 0, 0, .5);
+    --contentWidth: 70vw;
+    --skyltRamPadding: 2vw;
+    --articleWidth: 66vw;
+}
+
+/*---lägger till fonter--*/
+@font-face {
+    font-family: 'STIXReg'; 
+    src: url(STIX2Text-Regular.otf);
+}

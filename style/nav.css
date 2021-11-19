@@ -1,0 +1,152 @@
+#loggedinInfo {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  width: auto;
+}
+
+#loggedinInfo * {
+  font-family: var(--regFont);
+}
+
+#loggedinInfo > div:first-child, #loggedinInfo > div:last-child {
+  padding: var(--btnPadding);
+  height: var(--btnMSize);
+  border-width: var(--borderWidth);
+  border-style: var(--borderStyle);
+  border-color: rgb(0, 228, 73);
+  background-color: rgb(12, 161, 0);
+}
+
+#loggedinInfo > div:first-child {
+  border-top-style: var(--borderStyle);
+  border-bottom-style: var(--borderStyle);
+  border-right-width: 0px;
+  border-left-width: 0px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+#loggedinInfo > div:last-child {
+  position: relative;
+  transform: rotate(45deg);
+  transform-origin: center;
+  width: 14px;
+  height: 14px;
+  border-top-style: var(--borderStyle);
+  border-right-style: var(--borderStyle);
+  right: var(--btnSPos);
+  z-index: 1;
+}
+
+#loggedinInfo > div > span:nth-of-type(1){
+  margin: 0 15px 0 5px;
+}
+
+#hamClosed{
+  position: absolute;
+  right: 5vw;
+  top: 30px;
+  display: block;
+  z-index: 300;
+}
+
+#hamClosed span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  /*Färg på spans (själva meny-symbolen)*/
+  background: white;
+  /* */
+  border-radius: 3px;
+  transition: transform 0.5s;
+}
+
+#hamClosed input{
+  display: block;
+  width: 34px;
+  height: 32px;
+  position: absolute;
+  opacity: 0;
+  z-index: 200;
+  cursor: pointer;
+}
+
+#hamClosed input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  /*Möjlighet att byta färg på spans (själva krysset) 
+  när menyn är "öppen"*/
+  background: white;
+  /* */
+}
+
+#hamClosed input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#hamClosed input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+
+#hamOpen {
+  /*Välj backgrundsfärg på när hamburgarmenyn är öppen */
+  background-color: rgba(74, 74, 74, 0.9);
+  /**/
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 30vw;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 200;
+}
+
+#hamOpenContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+  width: 100%;
+}
+
+#hamOpenContent > a{
+  font-family: var(--headFont);
+  width: 100%;
+  flex-basis: 1px;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color .25s;
+}
+
+#hamOpenContent > a:hover{
+  background-color: rgba(255,255,255,0.6);
+  color: black;
+}
+
+#logout{
+  color: red;
+}
+
+#hamOpenContent > #logout:hover{
+  background-color: red;
+  color: white;
+}
+
+.active{
+  text-decoration: underline;
+}

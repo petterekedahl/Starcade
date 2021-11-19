@@ -1,0 +1,146 @@
+main {
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+#rankingMascot {
+  width: 600px;
+  margin-top: 25px;
+}
+
+#talkingPoint {
+  position: relative;
+  left: 5px;
+  bottom: 40px;
+  width: 0; 
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  border-right: 40px solid white;
+}
+
+#rankingMascot > img {
+  height: 200px;
+}
+
+#rankingControls {
+  width: 30vw;
+  justify-content: space-around;
+  margin: 40px auto 20px auto;
+}
+
+.selected {
+  text-decoration: underline;
+  background-color: var(--pHColor);
+}
+
+#leaders, #rest {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 75px;
+  grid-gap: 10px;
+}
+
+#leaders {
+  margin-bottom: 50px;  
+}
+
+#rest {
+  max-height: 33vh;
+  overflow-y: scroll;
+}
+
+#leaders > div > * {
+  color: black;
+}
+
+#leaders > div:first-of-type {
+  background-color: rgb(207, 181, 59);
+  border-color: rgb(152, 132, 37);
+  border-style: var(--borderStyle);
+  border-width: var(--borderWidth);
+}
+
+#leaders > div:first-of-type > .wRanking_placement {
+  color: transparent;
+  background-image: url(../media/medals/golden.png);
+  background-size: contain;
+  width: 64px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+}
+
+#leaders > div:nth-of-type(2) {
+  background-color: rgb(153, 153, 153);
+  border-color: rgb(94, 94, 94);
+  border-style: var(--borderStyle);
+  border-width: var(--borderWidth);
+}
+
+#leaders > div:nth-of-type(2) > .wRanking_placement {
+  color: transparent;
+  background-image: url(../media/medals/silver.png);
+  background-size: contain;
+  width: 55px;
+  height: 80px;
+  position: relative;
+  top: 13px;
+}
+
+#leaders > div:nth-of-type(3) {
+  background-color: rgb(152, 132, 37);
+  border-color: rgb(156, 122, 60);
+  border-style: var(--borderStyle);
+  border-width: var(--borderWidth);
+}
+
+#leaders > div:nth-of-type(3) > .wRanking_placement {
+  color: transparent;
+  background-image: url(../media/medals/bronze.png);
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+}
+
+.wRanking_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  padding: 0px;
+}
+
+.wRanking_placement {
+  font-family: var(--headFont);
+  font-size: xxx-large;
+}
+
+.wRanking_profilepic {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--transpColor);
+  border-radius: 50%;
+  background-size: cover;
+  background-color: var(--transpColor);
+}
+
+.wRanking_tp {
+  font-size: x-large;
+}
+
+.wRanking_name, .wRanking_tp {
+  font-family: var(--regFont);
+}
+
+@media {
+  .mascotTalk {
+    width: 90vw;
+  }
+  
+  #leaders, #rest {
+    grid-template-columns: 1, 1fr;
+  }
+}

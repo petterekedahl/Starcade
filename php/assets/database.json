@@ -1,0 +1,225 @@
+{
+    "users": [
+        {
+            "userID": 0,
+            "username": "ludvig",
+            "password": "1234",
+            "name": "Ludvig",
+            "profileImg": "..\/media\/profileimages\/green_alien.png",
+            "birthYear": "2020",
+            "homeplanet": "Earth",
+            "favoriteGame": "X",
+            "totalPoints": 10,
+            "friends": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "userID": 1,
+            "username": "johanna",
+            "password": "1234",
+            "name": "Johanna",
+            "profileImg": "..\/media\/profileimages\/purple_alien.png",
+            "birthYear": "2020",
+            "homeplanet": "Pluto",
+            "favoriteGame": "Snake",
+            "totalPoints": 30,
+            "friends": [
+                0,
+                2,
+                5
+            ]
+        },
+        {
+            "userID": 2,
+            "username": "karoline",
+            "password": "1234",
+            "name": "Karroninja",
+            "profileImg": "..\/media\/profileimages\/purple_alien.png",
+            "birthYear": "1992-02-08",
+            "homeplanet": "Saturn",
+            "favoriteGame": "Labyrinth",
+            "totalPoints": 1073,
+            "friends": [
+                1,
+                3,
+                0
+            ]
+        },
+        {
+            "userID": 4,
+            "username": "karro",
+            "password": "1234",
+            "name": "Karroyeah",
+            "profileImg": "..\/media\/profileimages\/blue_alien.png",
+            "birthYear": "1992-02-08",
+            "homeplanet": "Pluto",
+            "favoriteGame": "Memory",
+            "totalPoints": 40,
+            "friends": []
+        },
+        {
+            "userID": 6,
+            "username": "johanna1234",
+            "password": "1234",
+            "name": "Jo",
+            "profileImg": "..\/media\/profileimages\/violet_alien.png",
+            "birthYear": "1996-10-13",
+            "homeplanet": "Venus",
+            "favoriteGame": "Pinball",
+            "totalPoints": 20,
+            "friends": [
+                2,
+                4,
+                10
+            ]
+        },
+        {
+            "userID": 7,
+            "username": "allan",
+            "password": "1234",
+            "name": "Allan",
+            "profileImg": "..\/media\/profileimages\/neongreen_alien.png",
+            "birthYear": "1990-01-20",
+            "homeplanet": "Pluto",
+            "favoriteGame": "Pinball",
+            "totalPoints": 0,
+            "friends": [
+                0
+            ]
+        },
+        {
+            "userID": 8,
+            "username": "petter",
+            "password": "1234",
+            "name": "Petter Ekedahl",
+            "profileImg": "..\/media\/profileimages\/peargreen_alien.png",
+            "birthYear": "1995-05-04",
+            "homeplanet": "Mars",
+            "favoriteGame": "Star wars Podracer",
+            "totalPoints": 100,
+            "friends": [
+                2,
+                0,
+                7,
+                1
+            ]
+        },
+        {
+            "userID": 9,
+            "username": "jojo",
+            "password": "1234",
+            "name": "hoo",
+            "profileImg": "..\/media\/profileimages\/blue_alien.png",
+            "birthYear": "2021-01-14",
+            "homeplanet": "Jupiter",
+            "favoriteGame": "hooo",
+            "totalPoints": 0,
+            "friends": []
+        },
+        {
+            "userID": 10,
+            "username": "werwer",
+            "password": "1234",
+            "name": "petter",
+            "profileImg": "..\/media\/profileimages\/green_alien.png",
+            "birthYear": "2025-03-21",
+            "homeplanet": "Uranus",
+            "favoriteGame": "sims",
+            "totalPoints": 0,
+            "friends": [
+                9
+            ]
+        },
+        {
+            "userID": 11,
+            "username": "noah",
+            "password": "1234",
+            "name": "Noah Lissner",
+            "profileImg": "..\/media\/profileimages\/militarygreen_alien.png",
+            "birthYear": "1999-08-01",
+            "homeplanet": "Pluto",
+            "favoriteGame": "Skip-bo",
+            "totalPoints": 0,
+            "friends": [
+                8,
+                0
+            ]
+        }
+    ],
+    "score": [
+        {
+            "scoreID": 0,
+            "game": 0,
+            "highscore": "0",
+            "time": "2020-11-30T11:36:37.509Z"
+        },
+        {
+            "scoreID": 1,
+            "game": 1,
+            "highscore": "70",
+            "time": "2021-01-08T10:55:22.628Z"
+        },
+        {
+            "scoreID": 2,
+            "game": 2,
+            "highscore": "10",
+            "time": "2021-01-08T10:25:23.730Z"
+        },
+        {
+            "scoreID": 3,
+            "game": 3,
+            "highscore": "75",
+            "time": "2021-01-08T14:15:40.212Z"
+        }
+    ],
+    "planets": [
+        {
+            "planetID": 0,
+            "planetName": "Mercury",
+            "planetImg": "..\/media\/planets\/mercury.png"
+        },
+        {
+            "planetID": 1,
+            "planetName": "Venus",
+            "planetImg": "..\/media\/planets\/venus.png"
+        },
+        {
+            "planetID": 2,
+            "planetName": "Earth",
+            "planetImg": "..\/media\/planets\/earth.png"
+        },
+        {
+            "planetID": 3,
+            "planetName": "Mars",
+            "planetImg": "..\/media\/planets\/mars.png"
+        },
+        {
+            "planetID": 4,
+            "planetName": "Jupiter",
+            "planetImg": "..\/media\/planets\/jupiter.png"
+        },
+        {
+            "planetID": 5,
+            "planetName": "Saturn",
+            "planetImg": "..\/media\/planets\/saturn.png"
+        },
+        {
+            "planetID": 6,
+            "planetName": "Neptune",
+            "planetImg": "..\/media\/planets\/neptune.png"
+        },
+        {
+            "planetID": 7,
+            "planetName": "Uranus",
+            "planetImg": "..\/media\/planets\/uranus.png"
+        },
+        {
+            "planetID": 8,
+            "planetName": "Pluto",
+            "planetImg": "..\/media\/planets\/pluto.png"
+        }
+    ]
+}

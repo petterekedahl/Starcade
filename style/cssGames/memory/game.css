@@ -1,0 +1,68 @@
+#gameScreen {
+    display: flex;
+    flex-direction: column;
+    background-image: var(--dottedBackground);
+    background-size: var(--dottedBackgroundSize);
+}
+
+.gameInfo {
+    flex-basis: 20vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+}
+
+.headTime {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+}
+
+.topList {
+    flex-grow: 1;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*---style för flipcardMovingGame----*/
+.gameGrid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.flipCardGame {
+    width: calc(10vw/1.9);
+    height: calc(12vw/1.9);
+    grid-area: 1 / 1 / 1 / 1;
+}
+.flipCardGame:hover {
+    cursor: pointer;
+}
+
+.flipCardInnerGame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+.flipCardFrontGame, .flipCardBackGame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flipCardBackGame {
+    transform: rotateY(180deg);
+}

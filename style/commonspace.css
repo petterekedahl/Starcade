@@ -1,0 +1,212 @@
+:root{
+  --cursorX: 100px;
+  --cursorY: 100px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+div {
+  font-family: var(--regFont);
+}
+
+#planets {
+  width: 70vw;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  clip-path: circle(10vh at calc(var(--cursorX) - 5%) calc(var(--cursorY) - 5%));
+
+  border: 1px solid rgba(51, 255, 0, 0.747);
+}
+
+#planets > div {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#planets > div:hover {
+  cursor: pointer;
+}
+
+#Mercury {
+  width: 30px;
+  height: 30px;
+  top: 100px;
+}
+
+#Venus {
+  width: 30px;
+  height: 30px;
+  top: 34px;
+} 
+
+#Earth {
+  width: 50px;
+  height: 50px;
+  top: 56px;
+  left: 84px;
+}
+
+#Mars {
+  width: 50px;
+  height: 50px;
+  left: 100px;
+  bottom: 42px;
+}
+
+#Jupiter {
+  width: 200px;
+  height: 200px;
+  top: 137px;
+  left: 134px;
+}
+
+#Saturn {
+  height: 200px;
+  width: 569px;
+  bottom: 82px;
+  right: 187px;
+}
+
+#Neptune {
+  width: 70px;
+  height: 70px;
+  bottom: 79px;
+}
+
+#Uranus {
+  width: 70px;
+  height: 70px;
+  right: 2px;
+  top: 67px;
+}
+
+#Pluto {
+  width: 30px;
+  height: 30px;
+  top: 138px;
+  left: 148px;
+}
+
+#popUpMaskot {
+  width: 20vw;
+  flex-direction: column-reverse;
+
+  z-index: 50;
+}
+
+#popUpMaskot > img {
+  height: 200px;
+}
+
+#talkPoint {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  margin-bottom: 10px;
+}
+
+#cross {
+  background-color: var(--nBColor);
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  transition: background-color .25s;
+}
+
+#cross:hover {
+  cursor: pointer;
+  background-color: var(--nHColor);
+}
+
+#cross:active {
+  background-color: var(--nBGColor);
+}
+
+#cross > h1 {
+  transform-origin: center;
+  transform: rotate(45deg);
+  font-size: 40px;
+}
+
+#popupSearch {
+  display: none;
+  height: 560px;
+  min-width: 300px;
+  z-index: 5;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  padding: 20px;
+  z-index: 50;
+}
+
+#popupSearch > nav {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#wrapFriends {
+  max-height: 480px;
+  flex-direction: column;
+  overflow-y: scroll;
+  justify-content: flex-start;
+}
+
+h3 > span, h2 > span {
+  font-family: var(--regFont);
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.foundUser > div:first-of-type, .foundUser > div:nth-of-type(2) {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.foundUser {
+  width: 300px;
+  padding: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  transition: background-color .25s;
+}
+
+.foundUser:hover {
+  background-color: rgba(100, 100, 100, .6);
+  cursor: pointer;
+}
+
+.foundUser:active {
+  background-color: rgba(40, 40, 40, .6);
+}
+
+.foundUser img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+#controls {
+  position: fixed;
+  top: 90vh;
+  right: 100px;
+  padding: 10px 20px;
+
+  z-index: 50;
+}
+
+#controls .inputHolder {
+  margin-top: 0px;
+}

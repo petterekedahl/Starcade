@@ -1,0 +1,87 @@
+main {
+  height: 100vh;
+  justify-content: space-around;
+}
+
+main > div {
+  flex-direction: column;
+}
+
+select {
+  height: 40px;
+  width: 150px;
+  border-style: var(--borderStyle);
+  border-width: var(--borderWidth);
+  border-color: black;
+  color: black;
+}
+
+#ticket {
+  padding: 25px 30px;
+  background-image: url(../media/ticket.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#ticket {
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+#ticket *:not(button) {
+  color: black;
+}
+
+#registerTitle * {
+  margin: 10px;
+}
+
+#registerLogo {
+height: 30px;
+}
+
+#registerTitle span {
+  font-size: 30px;
+}
+
+#selectBirthday {
+  margin-top: 10px;
+}
+
+#selectBirthday .inputHolder {
+  margin-top: 0px;<
+}
+
+#chooseAPic {
+  text-align: center;
+}
+
+#pictureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 15px;
+  z-index: 10;
+  padding: 30px;
+}
+
+#pictureGrid img {
+  width: 7vw;
+  border-radius: 50%;
+}
+
+#pictureGrid img:hover {
+  cursor: pointer;
+  background-color: rgba(100, 100, 100, .6);
+}
+
+#pictureGrid img:active {
+    background-color: rgba(40, 40, 40, .6);
+}
+
+.chosenPic {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,76 @@
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  background-image: url(../media/space-by-A_Owen.jpg);
+  flex-direction: column;
+}
+
+main > div > div, #wrapForm, #loginform, welcomeMessage {
+  flex-direction: column;
+}
+
+main > div {
+  flex-direction: row;
+}
+
+main > div:first-child {
+  width: 90%;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+#welcomeMessage {
+  width: 40vw;
+  text-align: center;
+}
+
+#welcomeMessage > img {
+  width: 30vw;
+  margin-bottom: 20px;
+}
+
+#wrapForm {
+  margin-bottom: 20px;
+}
+
+.transp {
+  padding: 20px;
+}
+
+#popUpMaskotIndex {
+  position: relative;
+  flex-direction: row;
+  left: 75px;
+  bottom: 9vh;
+  width: 55vw;
+}
+
+#popUpMaskotIndex > img {
+  height: 25vh;
+  margin-left: -35px;
+}
+
+.mascotTalk {
+  width: 35%;
+}
+
+#talkPoint {
+  width: 0; 
+  height: 0; 
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 50px solid white;
+  position: relative;
+  bottom: 30px;
+  right: 5px;
+}
+
+
+@media (max-width: 1300px) {
+  #popUpMaskotIndex {
+    left: -50px;
+  }
+}

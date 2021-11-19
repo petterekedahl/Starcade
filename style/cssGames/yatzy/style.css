@@ -1,0 +1,149 @@
+#gameScreen{
+	position: relative;
+}
+
+.gamePopUp{
+	z-index: 10;
+}
+
+#gameScreen p,
+#gameScreen div,
+#gameScreen button,
+#gameScreen span,
+#gameScreen h1{
+	color: black;
+}
+
+#gameScreen > div:nth-child(1){	
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height:100%;
+    margin:0;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*
+header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+*/
+
+#scoreboard{
+    display:flex;
+    flex-direction: column;
+		align-items: center;
+    width: 100%;
+		background-color: white;
+}
+
+#topScore{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+		width: 90%;
+}
+
+#finishing{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	width: 100%;
+}
+
+
+#totalScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreboard > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#results, #savedDices{
+    display: flex;
+    width: 90%;
+    height: 20%;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+#results > div, #savedDices > div{
+    display: flex;
+    width: calc(90vw/5 - 10px);
+    border: 3px solid black;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+}
+
+#knappar{
+    margin: 10px auto 10px;
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    height: 50px;
+}
+
+#throwsLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button:hover, #knappar > div:hover{
+    cursor: pointer;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+#results > div, #savedDices > div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#wdyw {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+		top: 0;
+		left: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#scoreOptions, #strykOptions{
+    width: 100%;
+    height: 30%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

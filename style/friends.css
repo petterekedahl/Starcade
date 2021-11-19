@@ -1,0 +1,76 @@
+main {
+  height: 100vh;
+  flex-direction: column;
+}
+
+span {
+  font-family: var(--regFont);
+  font-weight: normal;
+}
+
+div {
+  font-family: var(--headFont);
+}
+
+#userBox {
+  width: 90%;
+  justify-content: flex-start;
+}
+
+#userDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myInfo, #myPicture {
+  flex-direction: column;
+}
+
+#userDiv .btnHolder {
+  margin-top: 50px;
+}
+
+.infoHolder {
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
+
+#infoDiv > div:first-child > div:nth-child(1), #infoDiv > div:first-child > div:nth-child(4), form > div:first-child, label:nth-child(5), form > div:nth-child(2) > div:last-child {
+  position: relative;
+  left: 45px;
+}
+
+#pictureDiv {
+  margin-left: 50px;  
+}
+
+#pictureDiv > div:first-child {
+  height: 300px;
+  justify-content: space-between;
+}
+
+#pictureDiv img:first-child {
+  width: 250px;
+}
+
+#pictureDiv img:nth-child(2) {
+  height: 350px;
+}
+
+#lowerBox {
+  width: 90%;
+  justify-content: space-between;
+}
+
+#lowerBox > .btnHolder {
+  margin-top: auto;
+}
+
+#planetBackGround {
+  background-image: url(../media/planets/earth.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

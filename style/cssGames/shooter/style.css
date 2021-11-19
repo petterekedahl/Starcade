@@ -1,0 +1,24 @@
+#gameScreen{
+    display: flex;
+    justify-content: center;
+		align-items: center;
+    flex-direction: column;
+		height: 100%;
+}
+
+#shootingGrid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 60%;
+    width: 60%;
+    z-index: 10;
+    grid-gap: 5px;
+}
+
+.target{
+    height: 20px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

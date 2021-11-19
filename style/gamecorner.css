@@ -1,0 +1,52 @@
+main {
+  flex-direction: column;
+}
+
+main > .flexer {
+  margin-bottom: 5vh;
+  width: 80vw;
+  justify-content: space-around;
+}
+
+.transp:nth-child(3), .transp:nth-child(5) {
+  flex-direction: row-reverse;
+}
+
+.transp > .flexer {
+  flex-direction: column;
+  width: 45%;
+}
+
+.transp > .flexer > :not(h1:first-child) {
+  margin-top: 1vh;
+}
+
+.transp > img {
+  width: 45%;
+}
+
+#gameCornerMascot {
+  margin-top: 75px;
+  width: 600px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#gameCornerMascot > img {
+  height: 200px;
+}
+
+.mascotTalk {
+  width: 350px;
+}
+
+#talkPoint {
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 55px solid white;
+  position: relative;
+  top: 30px;
+  left: 5px;
+}

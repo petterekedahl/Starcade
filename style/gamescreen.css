@@ -1,0 +1,103 @@
+main {
+  height: 100vh;
+  justify-content: space-around;
+	
+/*	position: relative;*/
+}
+
+.gamePopUp{
+	position: absolute;
+	top: 37%;
+	left: 26%;
+	width: 400px;
+	height: 160px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+#info {
+  padding: 20px;
+}
+
+#info * {
+  text-align: center;
+}
+
+#warning, #warning section, #gameOver, #gameOver > section, #info {
+  flex-direction: column;
+}
+
+#gameOver p, #info p {
+  margin: 5px auto 10px;
+}
+
+#gameOver h1 {
+  margin-bottom: 20px;
+}
+
+a {
+  font-size: small;
+}
+
+#cabinet {
+  position: relative;
+  height: 720px;
+  width: 860px;
+  align-self: flex-end;
+  display: grid;
+  grid-auto-rows: 1fr 398px 1fr;
+  grid-auto-columns: 1fr 707px 1fr;
+}
+
+.hidden {
+  display: none;
+}
+
+#cabinetTop {
+  grid-area: 1 / 1 / 2 / 4;
+  background-image: url(../media/cabinet/cabinetTop.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#cabinetLSide {
+  grid-area: 2 / 1 / 3 / 2;
+  background-image: url(../media/cabinet/cabinetLSide.png);
+  background-size: cover;
+}
+
+#cabinetRSide {
+  grid-area: 2 / 3 / 3 / 4; 
+  background-image: url(../media/cabinet/cabinetRSide.png);
+  background-size: cover;
+}
+
+#cabinetBottom {
+  grid-area: 3 / 1 / 4 / 4;
+  background-image: url(../media/cabinet/cabinetBottom.png);
+  background-size: cover;
+}
+
+#gameScreen {
+  grid-area:  2 / 2 / 3 / 3;
+  background-color: darkblue;
+  width: 100%;
+  height: 100%;
+}
+
+#gameBox{
+	width: 100%;
+  height: 100%;
+}
+
+.gamePopUp > section:nth-of-type(1) > p{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
